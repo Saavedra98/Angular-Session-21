@@ -5,6 +5,7 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PostComponent } from './post/post.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -17,6 +18,7 @@ import { PostComponent } from './post/post.component';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule
   ],exports: [
     HomeComponent,
     LoginComponent,
