@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { PostComponent } from './post/post.component';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {MatInputModule} from '@angular/material/input';
 
 
 @NgModule({
@@ -18,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatInputModule
   ],exports: [
     HomeComponent,
     LoginComponent,

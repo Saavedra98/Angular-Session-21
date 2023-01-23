@@ -1,8 +1,43 @@
 <div class="container p-1 mx-auto rounded w-3/4 mt-5">
 
-    <h1 class="text-center font-mono text-3xl uppercase font-bold">Formulario</h1>
+    <h1 class="text-center text-white font-mono text-3xl uppercase font-bold">Formulario</h1>
 
-    <form [formGroup]="form" (submit)="registrar()">
+    <form class="example-form" [formGroup]="form" (submit)="registrar()">
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Nombre</mat-label>
+          <input type="text" formControlName="nombre" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Apellido</mat-label>
+          <input type="text" formControlName="apellido" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Usuario</mat-label>
+          <input type="text" formControlName="usuario" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Email</mat-label>
+          <input type="email" formControlName="email" class="caja" matInput >
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <mat-label class="etiqueta">Asunto</mat-label>
+          <input type="text" formControlName="asunto" class="caja" matInput >
+        </mat-form-field>
+        
+        <mat-form-field class="example-full-width">
+            <mat-label class="etiqueta">Mensaje</mat-label>
+            <textarea matInput formControlName="mensaje" class="area" style="resize: none;"></textarea>
+        </mat-form-field>
+
+        <div class="mt-1 w-40 mx-auto  ">
+            <button class="rounded px-8 py-3 bg-green-700 hover:bg-green-900 font-mono font-bold text-xl text-white">Registrar</button>
+        </div>
+
+
+    </form>
+
+
+    <!-- <form [formGroup]="form" (submit)="registrar()">
 
         <div class="formulario ">
 
@@ -42,11 +77,11 @@
         </div>
 
 
-    </form>
+    </form> -->
 
 
     <div class=" p-2 mt-5 rounded w-3/4 mx-auto">
-        <p class="text-center">{{persona | json}}</p>
+        <p class="text-center text-white text-2xl">{{persona | json}}</p>
     </div>
 
 

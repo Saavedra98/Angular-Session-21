@@ -2,22 +2,42 @@
 
 
     <ul class="flex flex-row w-3/4">
-        <li>
-            <a class="p-5 text-xl font-mono py-2 text-white "  routerLinkActive="bg-blue-700 rounded py-1" routerLink="/home">Home</a>
-        </li>
-        <li>
-            <a class="px-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1" routerLink="/post">Post</a>
-        </li>
-        <li>
-            <a class="px-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1" routerLink="/formulario">Formulario</a>
-        </li>
-    </ul> 
+
+        <button mat-button class="p-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+        routerLink="/home">Home</button>
+        
+        <button mat-button class="p-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+        routerLink="/post">Post</button>
+        
+        <button mat-button class="p-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+        routerLink="/formulario">Formulario</button>
+        
+        <!-- <li>
+            <a class="p-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+                routerLink="/home">Home</a>
+        </li> -->
+
+        <!-- <li>
+            <a class="px-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+                routerLink="/post">Post</a>
+        </li> -->
+        <!-- <li>
+            <a class="px-5 text-xl font-mono py-2 text-white " routerLinkActive="bg-blue-700 rounded py-1"
+                routerLink="/formulario">Formulario</a>
+        </li> -->
+
+    </ul>
 
     <ul class="flex flex-row-reverse w-1/4">
-        <li>
-            <a class="px-5 text-xl font-mono text-white" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="bg-blue-700 rounded py-1" routerLink="/">Login</a>
-        </li>
-    </ul> 
+
+        <button mat-button class="p-5 text-xl font-mono py-2 text-white " [routerLinkActiveOptions]="{exact: true}" routerLinkActive="bg-blue-700 rounded py-1"
+        routerLink="/">Login</button>
+
+        <!-- <li>
+            <a class="px-5 text-xl font-mono text-white" [routerLinkActiveOptions]="{exact: true}"
+                routerLinkActive="bg-blue-700 rounded py-1" routerLink="/">Login</a>
+        </li> -->
+    </ul>
 
 
 
